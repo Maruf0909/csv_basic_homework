@@ -9,8 +9,10 @@ def get_first_column(data):
         list: First column.
     """
     first_column=[]
-    for row in list(reader)[1]:
-        first_column.append(row)
+    for column in list(reader)[:]:
+        id=column[0]
+        first_column.append(id)
+
     
     return first_column
     
